@@ -69,14 +69,21 @@ Heading titles should only capitalize the first letter of the first word, except
 
 ### KIP0b2 Proposal identifiers
 
-**Regular proposals** must follow the naming convention `KIPAbC`, where `A` is the proposal number, `b` is the section letter, and `C` is the subsection number. 
+**Regular proposals**  
+Must follow the naming convention `KIPAbC`, where `A` is the proposal number, `b` is the section letter, and `C` is the subsection number. 
 
-**Subproposals** must follow the naming convention `KIPAbC-SPDeF`, where `A` is the proposal number, `b` is the section letter, `C` is the subsection number, `D` is the subproposal number, `e` is the subproposal section letter, and `F` is the subproposal subsection number.
+**Subproposals**  
+Must follow the naming convention `KIPAbC-SPDeF`, where `A` is the proposal number, `b` is the section letter, `C` is the subsection number, `D` is the subproposal number, `e` is the subproposal section letter, and `F` is the subproposal subsection number. 
 
 In either case, the following additional rules must be followed:
 - String literals `KIP` and `SP` must be in uppercase. 
 - Section letters must be in lowercase. 
 - Proposal, subproposal, and subsection numbers count up sequentially from 1, except for the proposal number of KIP0.
+
+**Examples**  
+`KIP0b2` would be read "KIP 0, section b, subsection 2".
+
+`KIP0b2-SP3a7` would be read "KIP 0, section b, subsection 2, subproposal 3, section a, subsection 7".
 
 
 ### KIP0b3 Proposal header fields
