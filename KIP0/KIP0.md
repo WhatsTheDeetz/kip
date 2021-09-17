@@ -18,9 +18,9 @@ Adopt the following standards defining the Keeper Improvement Proposal (KIP) and
 
 ### Subproposal templates
 
-- [KIP0d1 Minor amendments](https://github.com/keeperdao/kip/KIP0/templates/KIP0d1-SP-template.md)
-- [KIP0e3 Sophon onboarding](https://github.com/keeperdao/kip/KIP0/templates/KIP0e3-SP-template.md)
-- [KIP0e4 Sophon offboarding](https://github.com/keeperdao/kip/KIP0/templates/KIP0e4-SP-template.md)
+- [KIP0d1 Minor amendments](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP0d1-SP-template.md)
+- [KIP0e3 Sophon onboarding](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP0e3-SP-template.md)
+- [KIP0e4 Sophon offboarding](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP0e4-SP-template.md)
 
 ### Background
 
@@ -61,7 +61,7 @@ A version-controlled repository containing all KIPs, KIP templates, and supporti
 
 ### KIP0b1 Proposal style
 
-A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
+A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/blob/master/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
 
 The content of the proposal must be sound (make technical sense, accurate (contain true statements and motivations), and well-formed (follow the conventions of grammar, spelling, and the KIP guidelines).
 
@@ -216,7 +216,7 @@ KIP0d1 defines the subproposal process for amending a KIP.
 
 A minor amendment is a change to a KIP that preserves the KIP number. Amendments can be performed as long as the change does not alter the logic of the KIP or its external dependencies. 
 
-All KIP0d1 subproposals must use the template located at [KIP0d1-SP-template.md](https://github.com/keeperdao/kip/KIP0/templates/KIP0d1-SP-template.md).
+All KIP0d1 subproposals must use the template located at [KIP0d1-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP0d1-SP-template.md).
 
 ### KIP0d2 Replacement
 
@@ -256,11 +256,11 @@ The manner of creating rough consensus is left undefined. They may conduct a rou
 
 KIP0e3 defines the subproposal process for onboarding one or more Sophons. 
 
-All KIP0e3 subproposals must use the template located at [KIP0e3-SP-template.md](https://github.com/keeperdao/kip/KIP0/templates/KIP0e3-SP-template.md).
+All KIP0e3 subproposals must use the template located at [KIP0e3-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP0e3-SP-template.md).
 
 ### KIP0e4 Offboarding process 
 
 KIP0e4 defines the subproposal process for offboarding one or more Sophons.
 
-All KIP0e4 subproposals must use the template located at [KIP0e4-SP-template.md](https://github.com/keeperdao/kip/KIP0/templates/KIP0e4-SP-template.md).
+All KIP0e4 subproposals must use the template located at [KIP0e4-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP0e4-SP-template.md).
 
