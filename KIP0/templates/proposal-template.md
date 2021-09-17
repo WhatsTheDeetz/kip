@@ -26,23 +26,23 @@ replaced-by: none
 
 - None
 
-## KIP0na Your first section title 
+## KIPna Your first section title 
 
 - Section text here
 
-### KIP0na1 Your first subsection title
+### KIPna1 Your first subsection title
 
 - Subsection text here
 
-### KIP0na2 Your second subsection title
+### KIPna2 Your second subsection title
 
 - Subsection text here
 
-## KIP0nb Your second section title 
+## KIPnb Your second section title 
 
 - Section text here
 
-### KIP0nb1 Your first subsection title
+### KIPnb1 Your first subsection title
 
 - Subsection text here
 
