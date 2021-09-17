@@ -11,9 +11,16 @@ replaces: none
 replaced-by: none
 ```
 ## Preamble
+
 ### Proposal
 
 Adopt the following standards defining the Keeper Improvement Proposal (KIP) and associated governance processes. 
+
+### Subproposal templates
+
+- [KIP0d1 Minor amendments](https://github.com/keeperdao/kip/KIP0/templates/KIP0d1-SP-template.md)
+- [KIP0e3 Sophon onboarding](https://github.com/keeperdao/kip/KIP0/templates/KIP0e3-SP-template.md)
+- [KIP0e4 Sophon offboarding](https://github.com/keeperdao/kip/KIP0/templates/KIP0e4-SP-template.md)
 
 ### Background
 
@@ -21,8 +28,6 @@ This document both defines and is an example of the KIP - a standard document fo
 
 The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Foundation, the Maker Improvement Proposal of MakerDAO, as well as practices from the IETF and W3C. Additional information on the consensus procedure can be found in the Beigepaper.
 
-### References
-None
 
 
 ## KIP0a Definitions
