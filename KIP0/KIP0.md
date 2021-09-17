@@ -3,7 +3,7 @@
 id: KIP0
 title: Definition of the Keeper Improvement Proposal 
 author: hazard <hazard@keeperdao.com>
-type: standard
+type: meta
 status: draft
 created: 2020-09-02
 requires: none
