@@ -112,11 +112,11 @@ The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc
 
 * **Last-Call** The proposal has received Sophon review and recommendation. It is ready for final evaluation by DAO tokenholders.
 
-* **Accepted** The proposal has been ratified by tokenholders and is now finalized. It represents part of the current policy of the DAO, unless or until it has been replaced (see [KIP0e1]).
+* **Accepted** The proposal has received a Sophon recommendation of "Accept" (see [KIP0d2]), and tokenholders did not object. It now represents part of the current policy of the DAO, unless or until it has been replaced (see [KIP0e1]).
 
-* **Rejected**
+* **Rejected** The proposal has received a Sophon recommendation of "Reject" (see [KIP0e2]), and tokenholders did not object.
 
-* **Deferred**
+* **Deferred** The proposal has received a Sophon recommendation of "Defer" (see [KIP0e2]), and tokenholders did not object.
 
 * **Withdrawn** The proposal has been withdrawn by the author, or as the result of inactivity for an extended period of time.
 
@@ -124,7 +124,6 @@ The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc
 ### KIP0b6 Proposal licensing
 
 Unless otherwise specified, the content of a KIP becomes public domain on creation, and is licensed with [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-
 
 ## KIP0c Proposal Lifecycle 
 
