@@ -50,21 +50,16 @@ None
 
 A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
 
-The content of the proposal must meet the following minimum standards:
-- **Soundness** It should make technical sense.
-- **Accuracy** It should contain true statements and motivations.
-- **Well-formed-ness** It should follow the conventions of grammar, spelling, and the KIP guidelines themselves.
+The content of the proposal must be sound (make technical sense, accurate (contain true statements and motivations), and well-formed (follow the conventions of grammar, spelling, and the KIP guidelines).
 
 Heading titles should only capitalize the first letter of the first word, except where capital letters canonically appear, for example the abbreviation "DAO".
 
 ### KIP0b2 Proposal identifiers
 
-A KIP must be assigned an id which allows it to be uniquely referenced. The format of the id is given by the following naming conventions:
-
-- **Regular proposals** must follow the naming convention `KIPAbC`, where `A` is 
+**Regular proposals** must follow the naming convention `KIPAbC`, where `A` is 
 the proposal number, `b` is the section letter, and `C` is the subsection number. 
 
-- **Subproposals** must follow the naming convention `KIPAbC-SPDeF`, where `A` is the proposal number, `b` is the section letter, `C` is the subsection number, `D` is the subproposal number, `e` is the subproposal section letter, and `F` is the subproposal subsection number.
+**Subproposals** must follow the naming convention `KIPAbC-SPDeF`, where `A` is the proposal number, `b` is the section letter, `C` is the subsection number, `D` is the subproposal number, `e` is the subproposal section letter, and `F` is the subproposal subsection number.
 
 In either case, the following additional rules apply:
 - String literals `KIP` and `SP` must be in uppercase. 
@@ -228,10 +223,10 @@ There is no financial incentive attached to being a Sophon. There is no hard lim
 
 To serve as a Sophon, an individual must meet the following requirements.
 
-- Must be a member of the DAO, i.e. should hold the governance token.
 - Must have a durable identity, whether real or pseudonymous.
 - Should have history or relationship with the DAO in some way.
 - Should have a stake in the DAO's continued success.
+- Should have demonstrated expertise in an area of desirable need.
 
 ### KIP0e2 Recommendations
 Sophons examine proposals in order to publish a non-binding recommendation. The recommendation made by the Sophons should be one of the following three possibilities:
