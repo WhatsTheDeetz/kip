@@ -97,28 +97,28 @@ The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc
 
 ### KIP0b4 Proposal types
 
-* **General** Used for operational decisions, resource allocation, and matters that mostly affect the DAO's internal stakeholders, along with the parties named in the proposal.
+* `general` Used for operational decisions, resource allocation, and matters that mostly affect the DAO's internal stakeholders, along with the parties named in the proposal.
 
-* **Technical** Used for propsals that impact all integrated systems. New smart contracts, APIs, algorithms, and technical conventions fall under this type.
+* `technical` Used for propsals that impact all integrated systems. New smart contracts, APIs, algorithms, and technical conventions fall under this type.
 
-* **Meta** Used for proposals about the proposal process itself, or defining a subproposal process. 
+* `meta` Used for proposals about the proposal process itself, or defining a subproposal process. 
 
 
 ### KIP0b5 Proposal statuses
 
-* **Pre-Draft** The proposal is a work in progress available for public comment, but has not yet been entered into the permanent governance repository.
+* `pre-draft` The proposal is a work in progress available for public comment, but has not yet been entered into the permanent governance repository.
 
-* **Draft** The proposal has received public comment and been entered into the permanent governance repository.
+* `draft` The proposal has received public comment and been entered into the permanent governance repository.
 
-* **Last-Call** The proposal has received Sophon review and recommendation. It is ready for final evaluation by DAO tokenholders.
+* `last-call` The proposal has received Sophon review and recommendation. It is ready for final evaluation by DAO tokenholders.
 
-* **Accepted** The proposal has received a Sophon recommendation of "Accept" (see [KIP0d2]), and tokenholders did not object. It now represents part of the current policy of the DAO, unless or until it has been replaced (see [KIP0e1]).
+* `accepted` The proposal has received a Sophon recommendation of "Accept" (see [KIP0d2]), and tokenholders did not object. It now represents part of the current policy of the DAO, unless or until it has been replaced (see [KIP0e1]).
 
-* **Rejected** The proposal has received a Sophon recommendation of "Reject" (see [KIP0e2]), and tokenholders did not object.
+* `rejected` The proposal has received a Sophon recommendation of "Reject" (see [KIP0e2]), and tokenholders did not object.
 
-* **Deferred** The proposal has received a Sophon recommendation of "Defer" (see [KIP0e2]), and tokenholders did not object.
+* `deferred` The proposal has received a Sophon recommendation of "Defer" (see [KIP0e2]), and tokenholders did not object.
 
-* **Withdrawn** The proposal has been withdrawn by the author, or as the result of inactivity for an extended period of time.
+* `withdrawn` The proposal has been withdrawn by the author, or as the result of inactivity for an extended period of time.
 
 
 ### KIP0b6 Proposal licensing
@@ -145,7 +145,7 @@ During the public comment period, the author should work with forum-goers to obt
 
 It is the responsibility of the author to obtain rough consensus, and ultimately the choice of when to move to the next stage is in their hands. However, attempting to fast-track unpopular or unsettled matters will only increase the chances that the matter will be rejected by Sophon reviewers, or objected to during the Tokenholder objection vote.
 
-### KIP0c3 Pre-draft to Draft
+### KIP0c3 Pre-draft to draft
 
 To transition a proposal status from `pre-draft` to `draft`, the following steps are carried out:
 
@@ -163,7 +163,7 @@ Once the proposal has reached "Draft" status, it will be reviewed in detail by S
 
 If Sophons have not reviewed and formed a recommendation on a proposal after 1 month, the author should notify them asking for an update. If this happens repeatedly, it may need to be addressed by appropriate governance action.
 
-### KIP0c5 Draft to Last-Call
+### KIP0c5 Draft to last-call
 
 To transition a proposal status from `draft` to `last-call`, the following steps are carried out:
 
@@ -178,7 +178,7 @@ The objection vote period allows tokenholders to express their disapproval of th
 
 * Default objection vote period: 1 week
 
-### KIP0c7 Last-call to Accepted, Rejected, or Deferred
+### KIP0c7 Last-call to accepted, rejected, or deferred
 
 To transition a proposal status from `last-call` to `accepted`, `rejected`, or `deferred`, the following steps are carried out:
 
@@ -186,7 +186,7 @@ To transition a proposal status from `last-call` to `accepted`, `rejected`, or `
 2. A Sophon must open a pull request that assigns the proposal a status of `accepted`, `rejected`, or `deferred`, matching the Sophon recommendation.
 3. A Sophon must merge the pull request into the permanent governance repository.
 
-### KIP0c8 Last-call to Draft 
+### KIP0c8 Last-call to draft 
 
 To transition a proposal status from `last-call` to `draft`, the following steps are carried out:
 
