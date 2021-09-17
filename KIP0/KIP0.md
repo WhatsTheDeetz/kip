@@ -69,12 +69,11 @@ Heading titles should only capitalize the first letter of the first word, except
 
 ### KIP0b2 Proposal identifiers
 
-**Regular proposals** must follow the naming convention `KIPAbC`, where `A` is 
-the proposal number, `b` is the section letter, and `C` is the subsection number. 
+**Regular proposals** must follow the naming convention `KIPAbC`, where `A` is the proposal number, `b` is the section letter, and `C` is the subsection number. 
 
 **Subproposals** must follow the naming convention `KIPAbC-SPDeF`, where `A` is the proposal number, `b` is the section letter, `C` is the subsection number, `D` is the subproposal number, `e` is the subproposal section letter, and `F` is the subproposal subsection number.
 
-In either case, the following additional rules apply:
+In either case, the following additional rules must be followed:
 - String literals `KIP` and `SP` must be in uppercase. 
 - Section letters must be in lowercase. 
 - Proposal, subproposal, and subsection numbers count up sequentially from 1, except for the proposal number of KIP0.
@@ -192,20 +191,20 @@ The objection vote period allows tokenholders to express their disapproval of th
 **Status change: last-call to accepted, rejected, or deferred**  
 To transition a proposal status from `last-call` to `accepted`, `rejected`, or `deferred`, the following steps are carried out:
 
-1. The objection vote in KIP0c6 must resolve and show insufficient objection to the published recommendation. 
+1. The objection vote must resolve and show insufficient objection to the published recommendation. 
 2. A Sophon must open a pull request that assigns the proposal a status of `accepted`, `rejected`, or `deferred`, matching the Sophon recommendation.
 3. A Sophon must merge the pull request into the permanent governance repository.
 
 **Status change: last-call to draft**  
 To transition a proposal status from `last-call` to `draft`, the following steps are carried out:
 
-1. The objection vote in KIP0c6 must resolve and show sufficient objection to the published recommendation. 
+1. The objection vote must resolve and show sufficient objection to the published recommendation. 
 2. A Sophon must open a pull request that assigns the proposal a status of `draft`.
 3. A Sophon must merge the pull request into the permanent governance repository.
 
 ### KIP0c5 Resubmission 
 
-A KIP can be resubmitted from Pre-draft to Draft as many times as the author desires. Depending on the circumstances of its rejection, deferral, or objection, it may not have immediate priority for review.
+A KIP can be resubmitted from `pre-draft` to `draft` as many times as the author desires. Depending on the circumstances of its rejection, deferral, or objection, it may not have immediate priority for review.
 
 ## KIP0d Changes after acceptance 
 
