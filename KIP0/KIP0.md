@@ -32,21 +32,29 @@ The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Found
 
 ## KIP0a Definitions
 
-* **KIP** A Keeper Improvement Proposal, or KIP, is the standard document for all governance actions.
+### KIP0a1 KIP
+A Keeper Improvement Proposal, or KIP, is the standard document for all governance actions.
 
-* **Governance token**  The ERC-20 smart contract [0xfa5047c9c78b8877af97bdcb85db743fd7313d4a](https://etherscan.io/address/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a) (ticker: ROOK) on the Ethereum blockchain.
+### KIP0a2 Governance token  
+The ERC-20 smart contract [0xfa5047c9c78b8877af97bdcb85db743fd7313d4a](https://etherscan.io/address/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a) (ticker: ROOK) on the Ethereum blockchain.
  
-* **General public** Members of the general public are defined to be persons who are not members of the DAO.
+### KIP0a3 General public
+Members of the general public are defined to be persons who are not members of the DAO.
  
-* **Tokenholders** Members of the DAO are cryptographic keys which control any non-zero amount of the governance token.
+### KIP0a4 Tokenholders 
+Members of the DAO are cryptographic keys which control any non-zero amount of the governance token.
  
-* **Sophon** Sophons are persons with specific expertise that act as governance facilitators and advisors. See [KIP0d].
+### KIP0a5 Sophon
+Sophons are persons with specific expertise that act as governance facilitators and advisors. See [KIP0d].
  
-* **Public discussion channel** A service, freely accessible to members and non-members of the DAO, that allows discussion to take place in real-time.
+### KIP0a6 Public discussion channel
+A service, freely accessible to members and non-members of the DAO, that allows discussion to take place in real-time.
  
-* **Public governance forum** An internet forum, freely accessible to all members and non-members of the DAO, that allows discussion to take place in organized, semi-permanent topics. 
+### KIP0a7 Public governance forum
+An internet forum, freely accessible to all members and non-members of the DAO, that allows discussion to take place in organized, semi-permanent topics. 
  
-* **Permanent governance repository** A version-controlled repository containing all KIPs, KIP templates, and supporting material submitted by authors as part of the governance process.
+### KIP0a8 Permanent governance repository
+A version-controlled repository containing all KIPs, KIP templates, and supporting material submitted by authors as part of the governance process.
 
 
 ## KIP0b Proposals
@@ -127,26 +135,28 @@ Unless otherwise specified, the content of a KIP becomes public domain on creati
 
 ## KIP0c Proposal Lifecycle 
 
-### KIP0c1 Creation
+### KIP0c1 Submission
 
+**Pre-submission**  
 Before posting the proposal, the author may discuss the concept in the public communication channel, or open a thread in the public governance forum.
 
+**Submitting**  
 To post a proposal, the proposal author must carry out the following steps: 
 
 1. Write the text of the proposal following the guidelines in [KIP0].
 2. Assign the proposal a status of `pre-draft` (see [KIP0b5]).
 3. Post the proposal on the public governance forum.
 
-### KIP0c2 Pre-draft public comment period
+### KIP0c2 Crowd consensus
 
+**General public comment period**  
 During the public comment period, the author should work with forum-goers to obtain rough consensus on the proposal. This should include making revisions or adjustments in response to feedback.
 
 * Default pre-draft feedback period: 1 week
 
 It is the responsibility of the author to obtain rough consensus, and ultimately the choice of when to move to the next stage is in their hands. However, attempting to fast-track unpopular or unsettled matters will only increase the chances that the matter will be rejected by Sophon reviewers, or objected to during the Tokenholder objection vote.
 
-### KIP0c3 Pre-draft to draft
-
+**Status change: pre-draft to draft**  
 To transition a proposal status from `pre-draft` to `draft`, the following steps are carried out:
 
 1. The author must submit the complete proposal text as a pull request to the permanent governance repository. 
@@ -155,16 +165,16 @@ To transition a proposal status from `pre-draft` to `draft`, the following steps
 5. A Sophon must assign the proposal a status of `draft`.
 6. A Sophon must merge the pull request into the permanent governance repository.
 
-### KIP0c4 Sophon review period
+### KIP0c3 Sophon consensus
 
+**Sophon review period**  
 Once the proposal has reached "Draft" status, it will be reviewed in detail by Sophons, and receive attention from at least one who is a subject matter expert related to the content of the proposal. They should strive to complete this work in a reasonably timely manner. See [KIP0d3].
 
-* Maximum draft feedback period target: 1 month
+* Maximum duration: 1 month
 
 If Sophons have not reviewed and formed a recommendation on a proposal after 1 month, the author should notify them asking for an update. If this happens repeatedly, it may need to be addressed by appropriate governance action.
 
-### KIP0c5 Draft to last-call
-
+**Status change: draft to last-call**  
 To transition a proposal status from `draft` to `last-call`, the following steps are carried out:
 
 1. A Sophon must open a pull request that assigns the proposal a status of `last-call`.
@@ -172,29 +182,28 @@ To transition a proposal status from `draft` to `last-call`, the following steps
 3. A Sophon must merge the pull request into the permanent governance repository.
 4. A Sophon must open a objection vote associated to the proposal and recommendation.
 
-### KIP0c6 Objection vote period
+### KIP0c4 Tokenholder consensus
 
+**Tokenholder review and objection period**  
 The objection vote period allows tokenholders to express their disapproval of the Sophon recommendation, or else abstain. It is a silence procedure, meaning that lack of objection is taken to mean consent. 
 
-* Default objection vote period: 1 week
+* Default duration: 1 week
 
-### KIP0c7 Last-call to accepted, rejected, or deferred
-
+**Status change: last-call to accepted, rejected, or deferred**  
 To transition a proposal status from `last-call` to `accepted`, `rejected`, or `deferred`, the following steps are carried out:
 
 1. The objection vote in KIP0c6 must resolve and show insufficient objection to the published recommendation. 
 2. A Sophon must open a pull request that assigns the proposal a status of `accepted`, `rejected`, or `deferred`, matching the Sophon recommendation.
 3. A Sophon must merge the pull request into the permanent governance repository.
 
-### KIP0c8 Last-call to draft 
-
+**Status change: last-call to draft**  
 To transition a proposal status from `last-call` to `draft`, the following steps are carried out:
 
 1. The objection vote in KIP0c6 must resolve and show sufficient objection to the published recommendation. 
 2. A Sophon must open a pull request that assigns the proposal a status of `draft`.
 3. A Sophon must merge the pull request into the permanent governance repository.
 
-### KIP0c9 Resubmission 
+### KIP0c5 Resubmission 
 
 A KIP can be resubmitted from Pre-draft to Draft as many times as the author desires. Depending on the circumstances of its rejection, deferral, or objection, it may not have immediate priority for review.
 
