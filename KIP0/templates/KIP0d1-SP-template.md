@@ -18,7 +18,7 @@ Amend KIPx with the following.
 
 ### Background
 
-- Explanation behind the amendment of the KIP
+- Explanation behind the amendment of the KIP.
 - Explanation of why this change is valid for an amendment.
 - Any impact this has on other KIPs that interact with the KIP in question.
 
