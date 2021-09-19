@@ -1,21 +1,21 @@
-# KIP-0: Keeper DAO Governance Framework
+# KIP-0: KeeperDAO Governance Framework
 ```
 id: KIP-0
 author: hazard <hazard@keeperdao.com>
 type: standard
 status: draft
-created: 2020-09-02
+created: 2021-09-02
 tags:
 ```
 ## Preface 
 
 ### Proposal
 
-Adopt the following standards defining the Keeper Improvement Proposal (KIP) and associated governance processes. 
+Adopt the following standards defining the KeeperDAO Improvement Proposal (KIP) and associated governance processes. 
 
 ### Background
 
-This document both defines and is an example of the KIP - a standard document for all governance actions taken by Keeper DAO. An accessible governance process requires clear, consistent standards for how changes are proposed, and how consensus on those proposals is reached. Providing these things is the goal of this document.
+This document both defines and is an example of the KIP - a standard document for all governance actions taken by KeeperDAO. An accessible governance process requires clear, consistent standards for how changes are proposed, and how consensus on those proposals is reached. Providing these things is the goal of this document.
 
 The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Foundation, the Maker Improvement Proposal of MakerDAO, as well as practices from the IETF and W3C. Additional information on the consensus procedure can be found in the Beigepaper.
 
@@ -25,7 +25,7 @@ The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Found
 - [KIP-0.4.3 Sophon onboarding](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.4.3-SP-template.md)
 - [KIP-0.4.4 Sophon offboarding](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.4.4-SP-template.md)
 
-## 1 Keeper improvement proposals
+## 1 KeeperDAO improvement proposals
 
 ### 1.1 Style
 A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/blob/master/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
