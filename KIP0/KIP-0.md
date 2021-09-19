@@ -11,7 +11,7 @@ tags:
 
 ### Proposal
 
-Adopt the following standards defining the KeeperDAO Improvement Proposal (KIP) and associated governance processes. 
+Adopt the guidelines below that describe a governance process for KeeperDAO.
 
 ### Summary
 
