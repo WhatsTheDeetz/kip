@@ -64,7 +64,7 @@ The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc
 
    * `pre-draft` The proposal is a work in progress available for public comment, but has not yet been entered into the permanent governance repository.
    * `draft` The proposal has received public comment and been entered into the permanent governance repository.
-   * `final` The proposal has received a Sophon recommendation of "Accept", or "Reject", (see 4.2), and tokenholders did not object. 
+   * `final` The proposal has received a Sophon recommendation of "Accept", or "Reject", (see [4.2]), and tokenholders did not object. 
 
 ### 1.4 Licensing
 
