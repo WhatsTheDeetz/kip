@@ -97,7 +97,7 @@ It is the responsibility of the author to obtain rough consensus, and ultimately
 To transition a proposal status from `pre-draft` to `draft`, the following steps are carried out:
 
 1. The author must submit the complete proposal text as a pull request to the permanent governance repository. 
-2. A Sophon must examine the pull request to determine whether the proposal meets the guidelines laid out in [0.1]. The Sophon must provide specific feedback to allow the author to revise the pull request if necessary.
+2. A Sophon must examine the pull request to determine whether the proposal meets the guidelines laid out in [1]. The Sophon must provide specific feedback to allow the author to revise the pull request if necessary.
 3. The author must respond to all feedback from the Sophon, either by correcting the issues in the pull request, or giving an explanation.
 5. A Sophon must assign the proposal a status of `draft`.
 6. A Sophon must merge the pull request into the permanent governance repository.
