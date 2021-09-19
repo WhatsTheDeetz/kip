@@ -13,11 +13,11 @@ tags:
 
 Adopt the following standards defining the KeeperDAO Improvement Proposal (KIP) and associated governance processes. 
 
-### Background
+### Summary
 
-This document both defines and is an example of the KIP - a standard document for all governance actions taken by KeeperDAO. An accessible governance process requires clear, consistent standards for how changes are proposed, and how consensus on those proposals is reached. Providing these things is the goal of this document.
+KIP-0 sets up some governance guidelines. Easy to follow guidelines let more people participate in governance, which is what we want. 
 
-The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Foundation, the Maker Improvement Proposal of MakerDAO, as well as practices from the IETF and W3C. Additional information on the consensus procedure can be found in the Beigepaper.
+This KIP defines up a simple format for writing KeeperDAO improvement proposals (KIPs), and illustrates how a KIP goes from idea to reality, through consensus. Finally, it defines governance helpers called *Sophons* that coordinate the governance process.
 
 ### Templates 
 
@@ -28,163 +28,113 @@ The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Found
 ## 1 KeeperDAO improvement proposals
 
 ### 1.1 Style
-A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/blob/master/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
+Try to write in plain English, because not everyone is a native speaker. Lay it out to look something like this KIP, or use the [KIP template](https://github.com/keeperdao/kip/tree/master/KIP0/templates/proposal-template.md) to help. It doesn't have to be perfect. Governance is about communicating. As long as we can communicate, it's good.
 
-The content of the proposal must be sound (make technical sense, accurate (contain true statements and motivations), and well-formed (follow the conventions of grammar, spelling, and the KIP guidelines).
+### 1.2 Names and references
 
-References to headings within the same KIP should use `[a.b]`, where `a` is the section number, and `b` is the subsection number. References to headings in a different KIP must use `[KIP-a.b.c]`, where `a` is the KIP number, `b` is the section number, and `c` is the subsection number.
+We're going to refer to KIPs by name, so it helps to have a naming system. All KIPs get a number (this KIP gets number 0, so it's `KIP-0`). Sections and subsections help divide the KIP into parts. These are numbered too, because it's handy to reference them. The current part is labelled with the number `1.2`. 
 
-Headings below the subsection level should not be numbered. Headings should only capitalize the first letter of the first word, except where appropriate, for example the abbreviation "DAO". Heading numbers should be followed by a single space, not a period or any other punctuation.
-
-### 1.2 Identifiers and references
-
-Regular proposals must follow the naming convention `KIP-a.b.c`, where `a` is the proposal number, `b` is the section number, and `c` is the subsection number. 
-
-Subproposals must follow the naming convention `KIP-a.b.c-SP-x.y.z`, where `a` is the proposal number, `b` is the section number, `c` is the subsection number, `x` is the subproposal number, `y` is the subproposal section number, and `z` is the subproposal subsection number. 
-
-**Examples**
-- `KIP-55.1.2` would be read "KIP 55, section 1, subsection 2".
-- `KIP-55.1.2-SP-7.8.9` would be read "KIP 55, section 1, subsection 2, subproposal 7, section 8, subsection 9".
-
+We can combine these together to make a full reference to this section, `KIP-0.1.2`, which gives it a unique name among all the other KIPs. We could read this as "KIP 0, section 1, subsection 2". Sounds fancy!
 
 ### 1.3 Header fields
 
-The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style, preceded and followed by three backticks ( ``` ). The header fields must appear in the following order. All fields are required, however some may take the value "none" where appropriate, as noted below.
+A Sophon can add this part for you, don't worry. The header contains a bunch of metadata that we can use to build computer tools that work with KIPs. If you don't know what to write in a field, just write `none`.
 
-* **`id`** The unique proposal identifier [1.2].
+* **`name`** The name of the proposal, like "KIP-1337". See [1.2].
 
-* **`author`** Comma-separated list of names and email addresses of the proposal authors. List items must be formatted "Random J. User \<email-address\>".
+* **`author`** A list of author names (or usernames if anonymous), along with e-mail addresses or another way to contact them.
 
-* **`type`** The type of the proposal, one of: 
+* **`type`** There's two types of proposals. 
 
-    * `standard` Used for operational decisions, resource allocation, and matters that mostly affect the DAO's internal stakeholders, along with the parties named in the proposal.
-    * `act` Used for propsals that impact all integrated systems. New smart contracts, APIs, algorithms, and technical conventions fall under this type.
+    * `standard` Used for proposals that specify something that will last a long time, like this proposal. People might need to build on it or rely on it for a while. These can be changed and stuff.
+    * `act` Used for propsals that happen all at once. Once they're done, they're done.
 
-* **`status`** The status of the proposal, one of:
+* **`status`** Proposals have a status to let people know if what they are reading is a final thing, or just a draft.
 
-   * `pre-draft` The proposal is a work in progress available for public comment, but has not yet been entered into the permanent governance repository.
-   * `draft` The proposal has received public comment and been entered into the permanent governance repository.
-   * `final` The proposal has received a Sophon recommendation of "Accept", or "Reject", (see [4.2]), and tokenholders did not object. 
+   * `pre-draft` It's not even a draft. This is used for when a proposal is being talked about and revised on a public forum, before it gets submitted as a pull request.
+   * `draft` The proposal has been merged into the KIP repository. It will get review and then, if it's good, it can continue.
+   * `final` The proposal has gotten a review from Sophons, who recommended what to do with it, and tokenholders did not object. The proposal is now final.
 
 ### 1.4 Licensing
 
-Unless otherwise specified, the content of a KIP becomes public domain on creation, and is licensed with [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+Licenses say who owns the content that gets published in a KIP. Authors are free to define whatever license they want, but to make it easy, just use [CC0](https://creativecommons.org/publicdomain/zero/1.0/). This license makes the KIP a part of the public domain, so that everybody owns it.
 
 ## 2 Proposal lifecycle
 
-### 2.1 Submission
+The proposal lifecycle is how a KIP turns from an idea into something that the DAO does or uses. The lifecycle has a little work for everybody -- the author(s), the forum-goers, the Sophons, and the tokenholders.
 
-**Pre-submission**  
-Before posting the proposal, the author may discuss the concept in the public communication channel, or open a thread in the public governance forum.
+### 2.1 Making the proposal
 
-**Submitting**  
-To post a proposal, the proposal author must carry out the following steps: 
+If you have an idea, start writing a proposal! You don't have to share it right away, everybody has a different style. It can help to discuss your idea with friends on the Discord or forum, you might find good ideas you can use.
 
-1. Write the text of the proposal following the guidelines in [KIP-0].
-2. Assign the proposal a status of `pre-draft` (see [1.3]).
-3. Post the proposal on the public governance forum.
+When you're ready, it's time to post the proposal for people to see. Make a new thread in the KIP section of the governance forum, and a new KIP is born.
 
-### 2.2 Crowd consensus
+### 2.2 Getting public feedback on the forum
 
-**General public comment period**  
-During the public comment period, the author should work with forum-goers to obtain rough consensus on the proposal. This should include making revisions or adjustments in response to feedback.
+After posting your KIP, people on the forum and Discord might talk about it, ask you questions, and offer their own ideas or feedback. Harness the power of the hive-mind, and use their feedback to make your KIP even better. Making a KIP doesn't have to be about showing everybody a perfect idea from the start. Try not to think of it as having to "survive" criticism -- it's more like everybody getting together to work on a project. We're all in the same DAO. 
 
-* Default pre-draft feedback period: 1 week
+If people don't seem interested in your KIP, maybe they just don't know about it. As the author, you are the champion of your KIP. Get the word out! Ask people for feedback, and make it known you want to hear from them. 
 
-It is the responsibility of the author to obtain rough consensus, and ultimately the choice of when to move to the next stage is in their hands. However, attempting to fast-track unpopular or unsettled matters will only increase the chances that the matter will be rejected by Sophon reviewers, or objected to during the Tokenholder objection vote.
+Give things at least a week or so, to allow people to see your KIP. Once everybody is happy, you can move on to the next stage. Just remember, there's no point to trying to fast-track something that seems unpopular or doesn't have agreement.
 
-**Status change: pre-draft to draft**  
-To transition a proposal status from `pre-draft` to `draft`, the following steps are carried out:
+### 2.3 Submitting a pull request
 
-1. The author must submit the complete proposal text as a pull request to the permanent governance repository. 
-2. A Sophon must examine the pull request to determine whether the proposal meets the guidelines laid out in [1]. The Sophon must provide specific feedback to allow the author to revise the pull request if necessary.
-3. The author must respond to all feedback from the Sophon, either by correcting the issues in the pull request, or giving an explanation.
-5. A Sophon must assign the proposal a status of `draft`.
-6. A Sophon must merge the pull request into the permanent governance repository.
+Once things look good on the forum, submit a pull request to the KIP repository with your final KIP. 
 
-### 2.3 Sophon consensus
+A Sophon will review it and make any corrections that might need to get made, and also add the metadata in the header. They might ask you to make small changes and stuff, then give it the status `draft` and merge your KIP.
 
-**Sophon review period**  
-Once the proposal has reached "Draft" status, it will be reviewed in detail by Sophons, and receive attention from at least one who is a subject matter expert related to the content of the proposal. They should strive to complete this work in a reasonably timely manner.
+### 2.4 Getting review from Sophons
 
-* Maximum duration: 1 month
+Now that it's a draft, you can't make changes directly like you could on the forum. Your changes are pull requests now, and these get reviewed by Sophons. 
 
-If Sophons have not reviewed and formed a recommendation on a proposal after 1 month, the author should notify them asking for an update. If this happens repeatedly, it may need to be addressed by appropriate governance action.
+Now it's time for the Sophons to think about your proposal. They'll review it in detail, and talk amongst themselves. They should try to do this before too long, at least within 1 month of when the pull request was merged. 
 
-### 2.4 Tokenholder consensus
+When they're done, they'll make a public recommendation. They will recommend one of three things:
+- **Accept**: the Sophons think the KIP is good and should be adopted by the DAO.
+- **Reject**: the Sophons think the KIP is bad and should not be adopted by the DAO. 
+- **Defer**: the Sophons think the KIP is good, but should not be adopted by the DAO right now. Maybe later though.
 
-**Tokenholder review and objection period**  
-The objection vote period allows tokenholders to express their disapproval of the Sophon recommendation, or else abstain. It is a silence procedure, meaning that lack of objection is taken to mean consent. 
+### 2.5 Getting review from tokenholders
 
-* Default duration: 1 week
+Once Sophons have made their recommendation on your KIP, the next thing they will do is set up a Snapshot voting page for your KIP. This lets tokenholders to say if they don't agree with what the Sophons have recommended.
 
-**Status change: draft to final**  
-To transition a proposal status from `draft` to `final`, the following steps are carried out:
+In a way, tokenholders have already had a chance to review your KIP -- back in [2.2], on the forum. What's different now is that the Sophons have looked at it too, and have said what they think. This can help some people make up their minds if they weren't paying attention before.
 
-1. A Sophon must publish the recommendation (see 4.2).
-2. A Sophon must open a objection vote associated to the proposal and recommendation.
-3. The objection vote must resolve 
-   * If the vote result shows insufficient objection to the published recommendation, then:
-      1. A Sophon must open a pull request that assigns the proposal a status of `final`.
-      2. A Sophon must merge the pull request into the permanent governance repository.
-   * If the vote result shows sufficient objection to the published recommendation, then:
-      1. The proposal remains a draft.
+The vote stays open for 1 week. It's a funny kind of vote -- it asks "do you agree with what the Sophons think about this KIP?", and lets you answer "no", but not "yes". Not voting *is* saying yes -- here, silence is consent.
 
-### 2.5 Resubmission 
+### 2.6 Finalizing
 
-A KIP can be resubmitted from `pre-draft` to `draft` as many times as the author desires. Depending on the circumstances of its rejection, deferral, or objection, it may not have immediate priority for review.
+Once the vote is closed, it's time to decide. If there was enough objection, then the KIP remains a draft. Why? Because we don't know what to do with it! The Sophons said one thing, and the tokenholders said another. We have more work to do.
+
+On the other hand, if there wasn't much objection, then it looks like we have our answer. The KIP is now final. That doesn't mean it got accepted -- it could have been rejected too. Don't worry though, you can always submit more KIPs.
 
 ## 3 Change requests 
 
-Major changes should not occur to KIPs with `final` status. Instead, a new proposal should be created. A major change is defined as a change which breaks references or otherwise results in backwards incompatibility. 
+What about making changes to a KIP? Maybe something was spelled wrong, or a link was broken. That should be caught by the Sophons when they get the draft ready, but maybe not. Or maybe something was just plain missing, and should be added.
 
-Minor changes, defined as changes which either add new content or adjust existing content for formatting or correctness, without resulting in backwards incompatibility, are permitted via a change request process.
+Well, you can either make a new KIP, or you can try to modify the old one. Modifying can cause weird things to happen, so you should be careful. But it's definitely possible! It's too useful not to be.
 
-### 3.1 Amendment process
+### 3.1 Change request process
 
-KIP-0.3.1 defines the subproposal process for amending a KIP. 
+KIP-0.3.1 defines a change request process for changing a KIP. Changes can be performed as long as the change isn't too crazy. Use your head. 
 
-An amendment is a change to a KIP that preserves the KIP number. Amendments can be performed as long as the change does not alter the logic of the KIP or its external dependencies. 
-
-All KIP-0.3.1 subproposals must use the template located at [KIP-0.3.1-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.3.1-SP-template.md).
+Use the template located at [KIP-0.3.1-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.3.1-SP-template.md) to make the subproposal.
 
 ## 4 Sophons 
 
-Sophons are expert members of the DAO who use their long-term focus and technical understanding to "speak for the protocol" by analyzing and publishing recommendations on KIPs that fall into their area of expertise. They work together to generate a shared, public recommendation on proposals, in order to ensure that all proposals have received some level of qualified review, prior to being put before tokenholders.
+Sophons are governance helpers. They usually have some kind of expertise in a particular area, like finance, software, or governance, that makes them super useful. Sophons try to "speak for the protocol," rather than their own interests as individuals. They analyze KIPs and make recommendations together so that every KIP has been given some kind of attention before they're put in front of tokenholders for a vote.
 
-In addition to areas of subject matter expertise, Sophons should represent the major interest groups in the DAO. This will help the governance function better. At minimum, Contributors, Keepers, and the Community should be represented.
+You don't get much for being a Sophon. Mostly you get to look at paperwork. But it can be a rewarding way to experience the DAO.
 
-There is no financial incentive attached to being a Sophon. There is no hard limit on the number of Sophons. That is to be regulated by future proposal.
+### 4.1 Onboarding process 
 
-### 4.1 Requirements
+KIP-0.4.1 defines a subproposal process for onboarding one or more Sophons. 
 
-To serve as a Sophon, an individual must meet the following requirements.
+Use the template located at [KIP-0.4.1-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.4.1-SP-template.md).
 
-- Must have a durable identity, whether real or pseudonymous.
-- Should have history or relationship with the DAO in some way.
-- Should have a stake in the DAO's continued success.
-- Should have demonstrated expertise in an area of desirable need.
+### 4.2 Offboarding process 
 
-### 4.2 Recommendations
-Sophons examine proposals in order to publish a non-binding recommendation. The recommendation made by the Sophons should be one of the following three possibilities:
+KIP-0.4.2 defines a process for offboarding one or more Sophons.
 
-* **Accept**: in the opinion of the Sophons, the proposal has merit and could be adopted by the DAO.
-* **Reject**: in the opinion of the Sophons, the proposal does not have merit and should not be adopted by the DAO.
-* **Defer**: in the opinion of the Sophons, the proposal has merit, but is either not possible to immediately implement, or conflicts with another matter.
-
-Not all Sophons must participate in the creation of a recommendation, however no Sophon should be excluded. Sophons should reach rough consensus so that a single recommendation is published. 
-
-The manner of creating rough consensus is left undefined. They may conduct a roundtable discussion of the proposal or pursue other means compatible with the working style they develop.
-
-### 4.3 Onboarding process 
-
-KIP-0.4.3 defines the subproposal process for onboarding one or more Sophons. 
-
-All KIP-0.4.3 subproposals must use the template located at [KIP-0.4.3-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.4.3-SP-template.md).
-
-### 4.4 Offboarding process 
-
-KIP-0.4.4 defines the subproposal process for offboarding one or more Sophons.
-
-All KIP-0.4.4 subproposals must use the template located at [KIP-0.4.4-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.4.4-SP-template.md).
+Use the template located at [KIP-0.4.2-SP-template.md](https://github.com/keeperdao/kip/tree/master/KIP0/templates/KIP-0.4.2-SP-template.md).
 
