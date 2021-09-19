@@ -69,7 +69,7 @@ When you're ready, it's time to post the proposal for people to see. Make a new 
 
 ### 2.2 Getting public feedback on the forum
 
-After posting your KIP, people on the forum and Discord might talk about it, ask you questions, and offer their own ideas or feedback. Harness the power of the hive-mind, and use their feedback to make your KIP even better. Making a KIP doesn't have to be about showing everybody a perfect idea from the start. Try not to think of it as having to "survive" criticism -- it's more like everybody getting together to work on a project. We're all in the same DAO. 
+After posting your KIP, people on the forum and Discord might talk about it, ask you questions, and offer their own ideas. Harness the power of the hive-mind, and use their feedback to make your KIP even better. Don't think of it as having to "survive" criticism. Think of it like everybody getting together to work on a project. We're all in the same DAO. 
 
 If people don't seem interested in your KIP, maybe they just don't know about it. As the author, you are the champion of your KIP. Get the word out! Ask people for feedback, and make it known you want to hear from them. 
 
