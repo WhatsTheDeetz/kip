@@ -28,7 +28,7 @@ The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Found
 ## 0.1 Keeper improvement proposals
 
 ### 0.1.1 Style
-A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/blob/master/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
+A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/blob/master/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
 
 The content of the proposal must be sound (make technical sense, accurate (contain true statements and motivations), and well-formed (follow the conventions of grammar, spelling, and the KIP guidelines).
 
@@ -52,7 +52,7 @@ The following additional rules apply:
 
 The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style, preceded and followed by three backticks ( ``` ). The header fields must appear in the following order. All fields are required, however some may take the value "none" where appropriate, as noted below.
 
-* **`id`** The unique proposal identifier (see 1.2).
+* **`id`** The unique proposal identifier (see [0.1.2]).
 
 * **`author`** Comma-separated list of names and email addresses of the proposal authors. List items must be formatted "Random J. User \<email-address\>".
 
@@ -65,7 +65,7 @@ The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc
 
    * `pre-draft` The proposal is a work in progress available for public comment, but has not yet been entered into the permanent governance repository.
    * `draft` The proposal has received public comment and been entered into the permanent governance repository.
-   * `final` The proposal has received a Sophon recommendation of "Accept", or "Reject", (see 4.2), and tokenholders did not object. 
+   * `final` The proposal has received a Sophon recommendation of "Accept", or "Reject", (see [0.4.2]), and tokenholders did not object. 
 
 ### 0.1.4 Licensing
 
@@ -82,7 +82,7 @@ Before posting the proposal, the author may discuss the concept in the public co
 To post a proposal, the proposal author must carry out the following steps: 
 
 1. Write the text of the proposal following the guidelines in [KIP-0].
-2. Assign the proposal a status of `pre-draft` (see [1.3]).
+2. Assign the proposal a status of `pre-draft` (see [0.1.3]).
 3. Post the proposal on the public governance forum.
 
 ### 0.2.2 Crowd consensus
@@ -98,7 +98,7 @@ It is the responsibility of the author to obtain rough consensus, and ultimately
 To transition a proposal status from `pre-draft` to `draft`, the following steps are carried out:
 
 1. The author must submit the complete proposal text as a pull request to the permanent governance repository. 
-2. A Sophon must examine the pull request to determine whether the proposal meets the guidelines laid out in [KIP-0.1]. The Sophon must provide specific feedback to allow the author to revise the pull request if necessary.
+2. A Sophon must examine the pull request to determine whether the proposal meets the guidelines laid out in [0.1]. The Sophon must provide specific feedback to allow the author to revise the pull request if necessary.
 3. The author must respond to all feedback from the Sophon, either by correcting the issues in the pull request, or giving an explanation.
 5. A Sophon must assign the proposal a status of `draft`.
 6. A Sophon must merge the pull request into the permanent governance repository.
@@ -122,7 +122,7 @@ The objection vote period allows tokenholders to express their disapproval of th
 **Status change: draft to final**  
 To transition a proposal status from `draft` to `final`, the following steps are carried out:
 
-1. A Sophon must publish the recommendation (see 4.2).
+1. A Sophon must publish the recommendation (see KIP-0.4.2).
 2. A Sophon must open a objection vote associated to the proposal and recommendation.
 3. The objection vote must resolve 
    * If the vote result shows insufficient objection to the published recommendation, then:
