@@ -1,6 +1,6 @@
 # KIP0: Definition of Stuff
 ```
-id: KIP0
+id: KIP-0
 author: hazard <hazard@keeperdao.com>
 type: standard
 status: draft
@@ -69,11 +69,11 @@ The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc
 
    * `final` The proposal has received a Sophon recommendation of "Accept", or "Reject", (see 4.2), and tokenholders did not object. 
 
-### 1.4 Proposal license
+### 1.4 Licensing
 
 Unless otherwise specified, the content of a KIP becomes public domain on creation, and is licensed with [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
-## 2 Proposal Lifecycle 
+## 2 Proposal lifecycle
 
 ### 2.1 Submission
 
