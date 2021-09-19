@@ -28,19 +28,19 @@ The KIP format builds on the Ethereum Improvement Proposal of the Ethereum Found
 ## 1 KeeperDAO improvement proposals
 
 ### 1.1 Style
-A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/blob/master/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
+A KIP must be formatted in [Markdown](https://en.wikipedia.org/wiki/Markdown) following the template available at [proposal-template.md](https://github.com/keeperdao/kip/blob/master/KIP0/templates/proposal-template.md). It should completely describe a single idea in plain language. Where appropriate, the keywords *must*, *must not*, *should*, *should not*, and *may*, as defined in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt), should be used.
 
 The content of the proposal must be sound (make technical sense, accurate (contain true statements and motivations), and well-formed (follow the conventions of grammar, spelling, and the KIP guidelines).
+
+References to headings within the same KIP should use `[a.b]`, where `a` is the section number, and `b` is the subsection number. References to headings in a different KIP must use `[KIP-a.b.c]`, where `a` is the KIP number, `b` is the section number, and `c` is the subsection number.
+
+Headings below the subsection level should not be numbered. Headings should only capitalize the first letter of the first word, except where appropriate, for example the abbreviation "DAO". Heading numbers should be followed by a single space, not a period or any other punctuation.
 
 ### 1.2 Identifiers and references
 
 Regular proposals must follow the naming convention `KIP-a.b.c`, where `a` is the proposal number, `b` is the section number, and `c` is the subsection number. 
 
 Subproposals must follow the naming convention `KIP-a.b.c-SP-x.y.z`, where `a` is the proposal number, `b` is the section number, `c` is the subsection number, `x` is the subproposal number, `y` is the subproposal section number, and `z` is the subproposal subsection number. 
-
-The following additional rules must be followed:
-- String literals `KIP` and `SP` must be in uppercase. 
-- Proposal, subproposal, and subsection numbers count up sequentially from 1, except for the proposal number of KIP-0.
 
 **Examples**
 - `KIP-55.1.2` would be read "KIP 55, section 1, subsection 2".
@@ -51,7 +51,7 @@ The following additional rules must be followed:
 
 The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style, preceded and followed by three backticks ( ``` ). The header fields must appear in the following order. All fields are required, however some may take the value "none" where appropriate, as noted below.
 
-* **`id`** The unique proposal identifier (see 1.2).
+* **`id`** The unique proposal identifier [1.2].
 
 * **`author`** Comma-separated list of names and email addresses of the proposal authors. List items must be formatted "Random J. User \<email-address\>".
 
@@ -97,7 +97,7 @@ It is the responsibility of the author to obtain rough consensus, and ultimately
 To transition a proposal status from `pre-draft` to `draft`, the following steps are carried out:
 
 1. The author must submit the complete proposal text as a pull request to the permanent governance repository. 
-2. A Sophon must examine the pull request to determine whether the proposal meets the guidelines laid out in [KIP-0.1]. The Sophon must provide specific feedback to allow the author to revise the pull request if necessary.
+2. A Sophon must examine the pull request to determine whether the proposal meets the guidelines laid out in [0.1]. The Sophon must provide specific feedback to allow the author to revise the pull request if necessary.
 3. The author must respond to all feedback from the Sophon, either by correcting the issues in the pull request, or giving an explanation.
 5. A Sophon must assign the proposal a status of `draft`.
 6. A Sophon must merge the pull request into the permanent governance repository.
