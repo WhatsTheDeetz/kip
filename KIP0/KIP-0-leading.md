@@ -122,7 +122,7 @@ The objection vote period allows tokenholders to express their disapproval of th
 **Status change: draft to final**  
 To transition a proposal status from `draft` to `final`, the following steps are carried out:
 
-1. A Sophon must publish the recommendation (see KIP-0.4.2).
+1. A Sophon must publish the recommendation (see [0.4.2]).
 2. A Sophon must open a objection vote associated to the proposal and recommendation.
 3. The objection vote must resolve 
    * If the vote result shows insufficient objection to the published recommendation, then:
