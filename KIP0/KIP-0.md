@@ -134,7 +134,7 @@ To transition a proposal status from `draft` to `final`, the following steps are
 
 A KIP can be resubmitted from `pre-draft` to `draft` as many times as the author desires. Depending on the circumstances of its rejection, deferral, or objection, it may not have immediate priority for review.
 
-## 3 Changes after acceptance 
+## 3 Change requests 
 
 Major changes should not occur to KIPs with `final` status. Instead, a new proposal should be created. A major change is defined as a change which breaks references or otherwise results in backwards incompatibility. 
 
