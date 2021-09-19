@@ -51,22 +51,19 @@ The following additional rules must be followed:
 
 The header contains metadata formatted in [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style, preceded and followed by three backticks ( ``` ). The header fields must appear in the following order. All fields are required, however some may take the value "none" where appropriate, as noted below.
 
-* `id` The unique proposal identifier (see 1.2).
+* **`id`** The unique proposal identifier (see 1.2).
 
-* `author` Comma-separated list of names and email addresses of the proposal authors. List items must be formatted "Random J. User \<email-address\>".
+* **`author`** Comma-separated list of names and email addresses of the proposal authors. List items must be formatted "Random J. User \<email-address\>".
 
-* `type` The type of the proposal, one of: 
+* **`type`** The type of the proposal, one of: 
 
     * `standard` Used for operational decisions, resource allocation, and matters that mostly affect the DAO's internal stakeholders, along with the parties named in the proposal.
-
     * `act` Used for propsals that impact all integrated systems. New smart contracts, APIs, algorithms, and technical conventions fall under this type.
 
-* `status` The status of the proposal, one of:
+* **`status`** The status of the proposal, one of:
 
    * `pre-draft` The proposal is a work in progress available for public comment, but has not yet been entered into the permanent governance repository.
-
    * `draft` The proposal has received public comment and been entered into the permanent governance repository.
-
    * `final` The proposal has received a Sophon recommendation of "Accept", or "Reject", (see 4.2), and tokenholders did not object. 
 
 ### 1.4 Licensing
