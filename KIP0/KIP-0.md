@@ -42,14 +42,13 @@ A Sophon can add this part for you, don't worry. The header contains a bunch of 
 
 * **`author`** A list of author names (or usernames if anonymous), along with e-mail addresses or another way to contact them.
 
-* **`type`** There's two types of proposals. 
-
-    * `standard` Used for proposals that specify something that will last a long time, like this proposal. People might need to build on it or rely on it for a while. These can be changed and stuff.
-    * `act` Used for propsals that happen all at once. Once they're done, they're done.
+* **`type`** There's two types of proposals:
+    * `standard` Something that will last a while, like this proposal (hopefully). 
+    * `act` Something that happens all at once. Once it's done, it's done.
 
 * **`status`** Proposals have a status to let people know if what they are reading is a final thing, or just a draft.
 
-   * `pre-draft` It's not even a draft. This is used for when a proposal is being talked about and revised on a public forum, before it gets submitted as a pull request.
+   * `pre-draft` Not even a draft! For when a proposal is being discussed on forum, before it gets submitted as a pull request.
    * `draft` The proposal has been merged into the KIP repository. It will get review and then, if it's good, it can continue.
    * `final` The proposal has gotten a review from Sophons, who recommended what to do with it, and tokenholders did not object. The proposal is now final.
 
